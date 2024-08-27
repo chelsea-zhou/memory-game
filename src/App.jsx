@@ -99,14 +99,18 @@ function App() {
 
   return (
     <div className='page'>
-      <div>
-        <p>Memory Game</p>
+      <div className='header'>
+        <div className='headertext'>
+          <p className='headername'>Memory Game</p>
+          <p id="rule"> Don't click the same character twice. What's the highest score your can get?</p>
+        </div>
+        <div className='scoreboard'>
+          <p>Best score: {bestScore} </p>
+          <p>Current score: {currentScore} </p>
+      </div>
       </div>
 
-      <div>
-        <p>Current score: {currentScore} </p>
-        <p>Best score: {bestScore} </p>
-      </div>
+
 
       <div className='cardsContainer'>
         {cards.length ==numberOfCards && randomizeCards(cards)}

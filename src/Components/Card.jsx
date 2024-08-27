@@ -10,10 +10,10 @@ export function Card({number, setCurrentClick, character}) {
     }
     return (
         <div className="card"  onClick={handleClick}>
+            <p id="name">{character.fullName}</p>
             <img src={character.imageUrl}></img>
-            <p>{character.fullName}</p>
-            <p>{character.family}</p>
-            <p>{character.title}</p>
+            {/* <p id="family">{character.family}</p> */}
+            <p id="title">{character.title}</p>
         </div>
     )
 }
