@@ -1,0 +1,23 @@
+.card {
+    width: 200px;
+    height: 400px;
+    background-color: aliceblue;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; /* Adds space between the grid items */
+}
+
+.card img {
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+}
+
+.card p {
+    padding: 0;
+    margin: 0;
+}
